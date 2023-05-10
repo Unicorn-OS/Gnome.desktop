@@ -7,6 +7,7 @@ home: https://github.com/Leleat/Tiling-Assistant
 - https://extensions.gnome.org/extension/3733/tiling-assistant/
 
 # gTile
+list: Top.Favorite!
 home: https://github.com/gTile/gTile
 - https://extensions.gnome.org/extension/28/gtile/
 
@@ -19,6 +20,6 @@ home: https://github.com/sunwxg/gnome-shell-extension-arrangeWindows
 - https://extensions.gnome.org/extension/1604/arrange-windows/
 
 # Forge
-list: Top.Favorite!  
+list: Love  
 home: https://github.com/forge-ext/forge
 - https://extensions.gnome.org/extension/4481/forge/
