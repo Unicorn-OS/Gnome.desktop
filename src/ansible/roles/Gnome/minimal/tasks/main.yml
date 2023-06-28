@@ -1,4 +1,4 @@
-- name: Install GnomeShell
+- name: Install GnomeShell minimal
   ansible.builtin.apt:
     pkg:
     - gdm3
