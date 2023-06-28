@@ -3,4 +3,4 @@
   remote_user: vagrant
 
   roles:
-  - AptCacherNg/Client
+    - AptCacherNg/Client
