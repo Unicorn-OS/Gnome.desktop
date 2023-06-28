@@ -14,12 +14,6 @@
     mode: "0600"
   when: ansible_user_id == 'vagrant' and ansible_virtualization_role == 'guest'
   become: true
-
-# Solution: https://forum.qubes-os.org/t/trouble-setting-up-apt-cacher-ng/12223
-- name: Fix - 403 CONNECT denied error
-  ansible.builtin.shell: "{{ item }}"
-  loop:
-    - "sed -i 's#https://#http://HTTPS///#g' /etc/apt/sources.list"
-    - "sed -i 's#https://#http://HTTPS///#g' /etc/apt/sources.list.d/*.list"
-  become: true
-  failed_when: false
+  notify:
+  - Fix, 403 CONNECT denied error
+  - Update cache
