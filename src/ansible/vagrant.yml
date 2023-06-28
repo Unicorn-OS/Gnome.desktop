@@ -1,4 +1,4 @@
-- name: Update web servers
+- name: AptCacherNg & GnomeShell minimal
   hosts: default
   remote_user: vagrant
 
