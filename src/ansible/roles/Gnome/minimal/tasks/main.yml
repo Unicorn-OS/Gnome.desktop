@@ -4,4 +4,5 @@
     - gdm3
     - gnome-session
     - gnome-shell
+    - gnome-terminal
   become: true
