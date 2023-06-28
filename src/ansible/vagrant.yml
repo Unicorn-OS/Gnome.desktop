@@ -1,0 +1,6 @@
+- name: Update web servers
+  hosts: default
+  remote_user: vagrant
+
+  roles:
+  - AptCacherNg/Client

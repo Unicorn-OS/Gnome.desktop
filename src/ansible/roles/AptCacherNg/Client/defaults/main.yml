@@ -1,0 +1,1 @@
+aptcacherng_ip: "{{ ansible_default_ipv4.gateway }}"  # 172.28.128.1

@@ -1,0 +1,7 @@
+- name: Install GnomeShell
+  ansible.builtin.apt:
+    pkg:gnome-shell
+      - gdm3
+      - gnome-session
+      - gnome-shell
+  become: true

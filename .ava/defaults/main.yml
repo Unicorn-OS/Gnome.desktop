@@ -1,0 +1,2 @@
+home_dir: "src/.uni/os"
+depends: ["git@github.com:Unicorn-OS/Gnome.desktop.git"]
