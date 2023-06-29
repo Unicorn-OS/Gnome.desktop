@@ -4,4 +4,4 @@
 
   roles:
     - AptCacherNg/Client
-    # - Gnome/minimal
+    - Gnome/minimal
