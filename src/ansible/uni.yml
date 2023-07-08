@@ -8,5 +8,5 @@
     debug: true
 
   roles:
-    - Gnome/minimal
+    # - Gnome/minimal
     - Gnome/Setting
