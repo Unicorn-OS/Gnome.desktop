@@ -1,0 +1,7 @@
+- name: Add settings to change
+  set_fact: 
+      setting: "{{ setting | default([]) + [item] }}"
+  with_items:
+    - "{{key.screen_lock_enabled}}"
+    - "{{key.idle_delay}}"
+

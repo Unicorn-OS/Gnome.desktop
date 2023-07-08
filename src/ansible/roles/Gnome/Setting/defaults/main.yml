@@ -1,0 +1,6 @@
+power: true
+focus_follow: true
+
+# Debug
+pre: false
+debug: false

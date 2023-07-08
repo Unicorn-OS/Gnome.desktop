@@ -1,0 +1,6 @@
+- name: Add settings to change
+  set_fact: 
+      setting: "{{ setting | default([]) + [item] }}"
+  with_items:
+    - "{{key.click_policy}}"
+

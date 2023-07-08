@@ -1,0 +1,5 @@
+- debug:
+    msg: "Set {{ item.path }} To {{ item.default }}"
+  loop: "{{ setting }}"
+
+- include_tasks: .fn/get setting.yml

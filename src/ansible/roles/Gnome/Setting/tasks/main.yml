@@ -1,0 +1,16 @@
+- include_tasks: .fn/dconf.yml
+  when: pre
+
+- include_tasks: Power.yml
+  when: power
+
+- include_tasks: Focus.yml
+  when: focus_follow
+
+
+# Debug
+- include_tasks: .fn/debug/main.yml
+  when: debug
+
+# Execute
+# - include_tasks: .fn/set setting.yml

@@ -1,0 +1,8 @@
+- name: Get setting
+  community.general.dconf:
+    key: "{{setting.path}}"
+    state: read
+  register: state
+
+- debug:
+    msg: "Setting {{setting.path | basename}} = {{state}}"

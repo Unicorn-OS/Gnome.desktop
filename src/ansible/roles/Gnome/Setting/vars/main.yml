@@ -1,0 +1,35 @@
+focus: {
+  "focus_mode": {
+    "path": "/org/gnome/desktop/wm/preferences/focus-mode",
+    "default": "'sloppy'",
+    },
+  "auto_raise": {
+    "path": "/org/gnome/desktop/wm/preferences/auto-raise",
+    "default": "true",
+    },
+  "auto_raise_delay": {
+    "path": "/org/gnome/desktop/wm/preferences/auto-raise-delay",
+    "default": 0,
+    },
+}
+
+power: {
+  "screen_lock_enabled": {
+    "path": "/org/gnome/desktop/screensaver/lock-enabled",
+    "default": "false",
+    },
+  "idle_delay": {
+    "path": "/org/gnome/desktop/session/idle-delay",
+    "default": "uint32 0",
+    },
+}
+
+click: {
+  "click_policy": {
+    "path": "/org/gnome/nautilus/preferences/click-policy",
+    "default": "'single'",
+    },
+}
+
+
+key: "{{ focus | ansible.builtin.combine(focus, power, click) }}"
