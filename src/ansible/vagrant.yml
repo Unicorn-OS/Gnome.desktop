@@ -5,6 +5,7 @@
   roles:
     - AptCacherNg/Client
     - Gnome/minimal
+    - Gnome/Settings
 
   tasks:
     - name: Change user password in Vagrant
