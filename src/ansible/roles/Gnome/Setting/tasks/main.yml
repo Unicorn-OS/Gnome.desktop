@@ -13,4 +13,4 @@
   when: debug
 
 # Execute
-# - include_tasks: .fn/set setting.yml
+- include_tasks: .fn/set setting.yml
