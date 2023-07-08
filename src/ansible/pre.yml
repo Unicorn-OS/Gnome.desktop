@@ -1,4 +1,13 @@
-# pull in .pre dependencies
-- hosts: localhost
+- name: Pull in .pre dependencies
+  hosts: localhost
   roles:
-  - .pre
+    - .pre
+
+  tasks:
+    - name: Link dependency roles
+      ansible.builtin.file:
+        src: "{{ git_dir }}/{{ item.git }}/{{ item.path }}"
+        dest: "{{ playbook_dir }}/roles/{{ item.name }}"
+        state: link
+      loop: "{{ role }}"
+      when: Vagrant

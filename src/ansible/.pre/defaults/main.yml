@@ -1,3 +1,5 @@
+Vagrant: true
+
 # Change this file to add dependency artifacts, repos, & roles!
 repo: [
   { repo: "https://github.com/Unicorn-OS/Apt-cacher.pkg.git", name: "Apt-cacher.pkg"},
