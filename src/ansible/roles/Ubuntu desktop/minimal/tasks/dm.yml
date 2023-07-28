@@ -1,0 +1,8 @@
+- name: Set /etc/X11/default-display-manager
+  ansible.builtin.copy:
+    src: default-display-manager
+    dest: /etc/X11/default-display-manager
+    owner: root
+    group: root
+    mode: '0644'
+  become: true

@@ -1,0 +1,11 @@
+- name: Install ubuntu desktop
+  ansible.builtin.apt:
+    pkg:
+    - gdm3
+    - desktop-base
+    - gnome-session
+    - gnome-software
+    - ubuntu-desktop-minimal
+  become: true
+
+- include_tasks: dm.yml
