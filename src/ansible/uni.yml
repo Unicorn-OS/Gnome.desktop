@@ -8,6 +8,7 @@
     # debug: true
 
   roles:
-    - Gnome/autologin
-    - Gnome/minimal
-    - Gnome/Setting
+    # - Gnome/autologin
+    # - Gnome/minimal
+    # - Gnome/Setting
+    - Power/always on
