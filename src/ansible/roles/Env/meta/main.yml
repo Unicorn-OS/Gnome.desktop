@@ -1,4 +1,5 @@
 dependencies:
+- Env/Autologin
 - Env/Gsettings/psutil
 - Env/Click Policy/single
 - Env/Focus/follow mouse
