@@ -1,0 +1,14 @@
+- name: Automatic Suspend
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
+    value: "'nothing'"
+    state: present
+
+#on:
+#org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'suspend'
+
+#off:
+#org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+
+# debug:
+#gsettings list-recursively | grep -s sleep-inactive-ac-type >one

@@ -1,6 +1,8 @@
 dependencies:
 - Env/Autologin
-# - Env/Gsettings/psutil
-# - Env/Click Policy/single
-# - Env/Focus/follow mouse
-# - Env/Power/always on
+- Env/Gsettings/psutil
+- Env/Click Policy/single
+- Env/Focus/follow mouse
+- Env/Power/always on
+- Env/Power/automatic suspend
+- Env/Mouse speed

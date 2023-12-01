@@ -1,0 +1,8 @@
+- name: Mouse Speed
+  community.general.dconf:
+    key: "/org/gnome/desktop/peripherals/mouse/speed"
+    value: '1.0'
+    state: present
+
+
+#org.gnome.desktop.peripherals.mouse speed 1.0
