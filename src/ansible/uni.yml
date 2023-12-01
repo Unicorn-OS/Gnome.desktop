@@ -8,7 +8,6 @@
     # debug: true
 
   roles:
-    # - Gnome/autologin
-    # - Gnome/minimal
-    # - Gnome/Setting
-    - Power/always on
+  - Gnome Shell
+  - Env
+  - Ubuntu desktop
