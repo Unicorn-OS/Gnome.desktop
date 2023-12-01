@@ -1,3 +1,0 @@
-- name: All keys
-  debug:
-    msg: "{{keys}}"

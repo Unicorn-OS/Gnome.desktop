@@ -5,8 +5,8 @@
   register: state
   loop: "{{ setting }}"
 
-# - debug:
-#     msg: "Setting {{ setting.path | basename }} = {{ state }}"
+- debug:
+    msg: "Setting {{ setting.path | basename }} = {{ state }}"
 
 - name: To Do!
   debug:

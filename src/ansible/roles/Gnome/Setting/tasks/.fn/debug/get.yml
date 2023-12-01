@@ -1,6 +1,0 @@
-- name: Get fact
-  ansible.builtin.set_fact:
-    setting: "{{key.auto_raise}}"
-
-- include_tasks: .fn/get setting.yml
-
