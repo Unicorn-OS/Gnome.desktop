@@ -1,4 +1,2 @@
 ---
-gnome_xdg: "ubuntu:GNOME"
-
-XDG_CURRENT_DESKTOP: "{{ lookup('ansible.builtin.env', 'XDG_CURRENT_DESKTOP') }}"
+gnome_xdg: "gnome"

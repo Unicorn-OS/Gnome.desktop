@@ -1,5 +1,6 @@
 ---
-# Automatically uses Sub-folders to contain distro specific scrips
-- include_tasks: Gnome.yml
-  when: XDG_CURRENT_DESKTOP == gnome_xdg
+- include_tasks: get_desktop.yml
 
+# Automatically uses Sub-folders to contain distro specific scrips
+# - include_tasks: Gnome.yml
+#   when: XDG_CURRENT_DESKTOP == gnome_xdg
