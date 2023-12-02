@@ -82,5 +82,5 @@ XDG_CURRENT_DESKTOP=$(echo -e "${XDG_CURRENT_DESKTOP[@]}" | get_frequent)
 # [4.] Set the triger $DE - declare it in lowercase, then cut `:something` and export
 declare -l DE && export DE="${XDG_CURRENT_DESKTOP/:*/}" && printf 'XDG_CURRENT_DESKTOP=%s\nDE=%s\n' "$XDG_CURRENT_DESKTOP" "$DE" >> "$LOG"
 
-# echo $DE
-echo -n $DE
+# echo -n $DE
+echo -n $XDG_CURRENT_DESKTOP

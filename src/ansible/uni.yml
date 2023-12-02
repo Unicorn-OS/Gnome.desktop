@@ -1,13 +1,12 @@
 - name: Setup Gnome desktop
-  hosts: localhost # , fedora, ubuntu
+  hosts: net, localhost #, fedora, ubuntu
   vars:
     # Host_vars
     ansible_become_password: u
     ansible_user: "{{lookup('ansible.builtin.env', 'USER')}}"
-    #
     # debug: true
 
   roles:
-  - Gnome Shell
+#  - Gnome Shell
   - Env
-  - Ubuntu desktop
+#  - Ubuntu desktop

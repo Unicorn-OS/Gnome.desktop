@@ -7,8 +7,9 @@
   register: XDG_CURRENT_DESKTOP
   changed_when: false
 
-- include_tasks: "{{ XDG_CURRENT_DESKTOP.stdout | capitalize }}/{{ ansible_distribution }}.yml"
+- include_tasks: "{{ XDG_CURRENT_DESKTOP.stdout | regex_replace('^ubuntu:', '') | capitalize }}/{{ ansible_distribution }}.yml"
 
 - debug:
-    msg: "{{ XDG_CURRENT_DESKTOP.stdout | capitalize }}/{{ ansible_distribution }}.yml"
+    msg: "{{ XDG_CURRENT_DESKTOP.stdout | regex_replace('^ubuntu:', '') | capitalize }}/{{ ansible_distribution }}.yml"
   when: debug
+
