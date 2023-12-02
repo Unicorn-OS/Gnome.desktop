@@ -1,0 +1,13 @@
+---
+# from: https://discussion.fedoraproject.org/t/how-to-export-save-shortcuts-in-gnome/75199
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: custom.txt
+    dest: /etc/custom.txt
+  become: true
+
+- name: Import Custom Keyboard Shortcuts
+  ansible.builtin.shell: cat /etc/custom.txt | dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+  changed_when: false
+
