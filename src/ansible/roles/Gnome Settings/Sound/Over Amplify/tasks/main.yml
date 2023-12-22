@@ -1,0 +1,7 @@
+---
+# https://forums.fedoraforum.org/showthread.php?323119-Over-Amplification
+- name: Over Amplify
+  community.general.dconf:
+    key: "/org/gnome/desktop/sound/allow-volume-above-100-percent"
+    value: "true"
+    state: present
