@@ -1,0 +1,9 @@
+---
+- name: Dependency for community.general.dconf
+  community.general.rpm_ostree_pkg:
+    name: python3-psutil
+    state: present
+  become: true
+  notify:
+  - Reboot
+

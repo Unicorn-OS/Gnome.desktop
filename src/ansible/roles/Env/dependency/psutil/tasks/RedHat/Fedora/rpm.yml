@@ -1,0 +1,7 @@
+---
+- name: Dependency for community.general.dconf
+  ansible.builtin.dnf:
+    name:
+    - python3-psutil
+    state: latest
+  become: true
