@@ -1,8 +1,0 @@
-dependencies:
-- Env/dependency/psutil
-- Env/Autologin
-- Env/Click Policy/single
-- Env/Focus/follow mouse
-- Env/Mouse speed
-- Env/Power/always on
-- Env/Power/automatic suspend

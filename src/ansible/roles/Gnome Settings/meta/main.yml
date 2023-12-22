@@ -1,0 +1,8 @@
+dependencies:
+- dependency/psutil
+- Gnome Settings/Autologin
+- Gnome Settings/Click Policy/single
+- Gnome Settings/Focus/follow mouse
+- Gnome Settings/Mouse speed
+- Gnome Settings/Power/always on
+- Gnome Settings/Power/automatic suspend
