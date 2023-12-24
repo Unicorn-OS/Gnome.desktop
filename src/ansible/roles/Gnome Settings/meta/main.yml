@@ -7,3 +7,4 @@ dependencies:
 - Gnome Settings/Power/always on
 - Gnome Settings/Power/automatic suspend
 - Gnome Settings/Sound/Over Amplify
+- Window Manager/Tilebar Actions

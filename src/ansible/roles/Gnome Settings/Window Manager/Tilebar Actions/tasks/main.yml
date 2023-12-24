@@ -1,0 +1,12 @@
+---
+- name: Minimize with Middle-Click
+  community.general.dconf:
+    key: "/org/gnome/desktop/wm/preferences/action-middle-click-titlebar"
+    value: "'minimize'"
+    state: present
+
+- name: Maximize Vertically with Right-Click
+  community.general.dconf:
+    key: "/org/gnome/desktop/wm/preferences/action-right-click-titlebar"
+    value: "'toggle-maximize-vertically'"
+    state: present 
