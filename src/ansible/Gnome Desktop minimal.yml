@@ -1,0 +1,8 @@
+---
+- name: Vagrant client
+  hosts: all #default #, apt-cacher.test
+  remote_user: vagrant
+  roles:
+    - UniInc.AptCacherNg-fix-Vagrant
+    - UniInc.AptCacherNg-Client
+    - UniInc.Gnome-Desktop-minimal

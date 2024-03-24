@@ -1,8 +1,0 @@
-- name: Install GnomeShell minimal
-  ansible.builtin.apt:
-    pkg:
-    - gdm3
-    - gnome-session
-    - gnome-shell
-    - gnome-terminal
-  become: true

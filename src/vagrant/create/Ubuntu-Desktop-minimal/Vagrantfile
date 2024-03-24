@@ -1,0 +1,23 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/ubuntu2310"
+
+  config.vm.define :beta_vm do |beta_vm|
+    beta_vm.vm.provider :libvirt do |v|
+      v.memory = 4096
+      v.cpus = 6
+      v.video_type = 'qxl'
+      v.graphics_type = 'spice'
+      v.channel :type => 'unix', :target_name => 'org.qemu.guest_agent.0', :target_type => 'virtio'
+      v.channel :type => 'spicevmc', :target_name => 'com.redhat.spice.0', :target_type => 'virtio'
+      #v.graphics_autoport = 'no'
+      v.cputopology :sockets => '1', :cores => '3', :threads => '2'
+    end
+    # beta_vm.vm.box = "generic/ubuntu2310"
+  end
+
+# Ansible
+  config.vm.provision "ansible" do |ansible|
+    ansible.verbose = "v"
+    ansible.playbook = "ansible/Ubuntu Desktop minimal.yml"
+  end
+end
