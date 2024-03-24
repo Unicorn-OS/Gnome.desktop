@@ -17,6 +17,7 @@ add(){
 
 clean(){
     vagrant destroy -f
+    rm $image
 }
 
 _test(){

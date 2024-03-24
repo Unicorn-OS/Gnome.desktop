@@ -8,3 +8,5 @@
 - name: UniInc.Ubuntu-needrestart-disable
 
 - name: UniInc.Gnome-Desktop-minimal
+
+- name: UniInc.Ubuntu-Desktop-minimal
