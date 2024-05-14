@@ -1,0 +1,27 @@
+- name: Automatic Suspend
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
+    value: "'nothing'"
+    state: present
+
+
+#org.gnome.shell.extensions.dash-to-dock autohide true
+- name: Auto-hide the Dock
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/autohide"
+    value: "true"
+    state: present
+
+#org.gnome.shell.extensions.dash-to-dock autohide-in-fullscreen false
+- name: Auto-hide the Dock
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/autohide-in-fullscreen"
+    value: "false"
+    state: present
+
+#org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+- name: Position on Screen
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/dock-position"
+    value: "'BOTTOM'"
+    state: present
