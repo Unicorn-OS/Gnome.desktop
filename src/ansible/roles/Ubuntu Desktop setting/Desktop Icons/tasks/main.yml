@@ -1,0 +1,6 @@
+# org.gnome.shell.extensions.ding show-home false
+- name: Show Home Folder
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/ding/show-home"
+    value: "false"
+    state: present
