@@ -4,3 +4,10 @@
     key: "/org/gnome/shell/extensions/ding/show-home"
     value: "false"
     state: present
+
+# org.gnome.shell.extensions.ding show-trash false
+- name: Show Trash on Desktop
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/ding/show-trash"
+    value: "false"
+    state: present
