@@ -1,0 +1,20 @@
+#org.gnome.shell.extensions.ding show-network-volumes false
+- name: Include Network Volumes
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/ding/show-network-volumes"
+    value: "false"
+    state: present
+
+#org.gnome.shell.extensions.ding show-volumes false
+- name: Show Volumes and devices
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/ding/show-volumes"
+    value: "false"
+    state: present
+
+#org.gnome.shell.extensions.dash-to-dock show-trash false
+- name: Show Trash
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/show-trash"
+    value: "false"
+    state: present
