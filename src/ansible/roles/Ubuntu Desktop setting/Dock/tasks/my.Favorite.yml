@@ -1,8 +1,4 @@
-- name: Automatic Suspend
-  community.general.dconf:
-    key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
-    value: "'nothing'"
-    state: present
+# get(){ gsettings list-recursively | grep dock }
 
 
 #org.gnome.shell.extensions.dash-to-dock autohide true
@@ -13,11 +9,19 @@
     state: present
 
 #org.gnome.shell.extensions.dash-to-dock autohide-in-fullscreen false
-- name: Auto-hide the Dock
+- name: Auto-hide in Fullscreen Dock
   community.general.dconf:
     key: "/org/gnome/shell/extensions/dash-to-dock/autohide-in-fullscreen"
     value: "false"
     state: present
+
+#org.gnome.shell.extensions.dash-to-dock multi-monitor true
+- name: Show on All displays
+  community.general.dconf:
+    key: "/org/gnome/shell/extensions/dash-to-dock/multi-monitor"
+    value: "true"
+    state: present
+
 
 #org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
 - name: Position on Screen
